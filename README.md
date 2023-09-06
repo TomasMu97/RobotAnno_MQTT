@@ -30,9 +30,7 @@ Once the dependencies have been compiled successfully, let's move to compile the
 - Move to the project folder
   ```
   rm -rf lib mosquitto json
-
   cd build
-
   rm -rf *
   ```
 - Compile the software using Build (All). This will automatically clone mosquitto and json repositories and cross-compile them
@@ -45,9 +43,7 @@ Once the dependencies have been compiled successfully, let's move to compile the
 - Move to the project folder
   ```
   rm -rf lib mosquitto json
-
   cd build
-
   rm -rf *
   ```
 - Compile the software using Build (All) This will automatically clone mosquitto and json repositories and cross-compile them
