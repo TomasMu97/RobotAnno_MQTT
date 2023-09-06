@@ -1,1 +1,0 @@
-All the source code (generated and edited) must be placed in this folder
