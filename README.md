@@ -14,7 +14,7 @@ This repository contains the source code for a spike-based controller for the Ro
 - src_test: Source code for C++ simulation.
 
 
-# Mosquitto and dependences cross-compilation
+# Compiler dependences
 This version of RbtAnno runs as MQTT client in the zynq platform. All dependences have to be cross-compiled. For the cross-compilation it will be used the arm-linux-gnueabihf-g++-8 compiler.
 - Install the compilers using the following commands:
   ```
@@ -24,17 +24,15 @@ This version of RbtAnno runs as MQTT client in the zynq platform. All dependence
   sudo apt-get install gcc-11
   ```
 
-# RobotAnno mqtt app compilation
+# RobotAnno mqtt app compilation and dependences cross-compilation
 Once the dependencies have been compiled successfully, let's move to compile the rbtanno mqtt client:
 - In vscode, select compiler: kit GCC 8.4.0 arm-linux-gnueabihf
 - Move to the project folder
   ```
   rm -rf lib mosquitto json
-  ```
-  ```
+
   cd build
-  ```
-  ```
+
   rm -rf *
   ```
 - Compile the software using Build (All). This will automatically clone mosquitto and json repositories and cross-compile them
@@ -47,11 +45,9 @@ Once the dependencies have been compiled successfully, let's move to compile the
 - Move to the project folder
   ```
   rm -rf lib mosquitto json
-  ```
-  ```
+
   cd build
-  ```
-  ```
+
   rm -rf *
   ```
 - Compile the software using Build (All) This will automatically clone mosquitto and json repositories and cross-compile them
